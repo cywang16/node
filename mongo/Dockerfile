@@ -9,4 +9,6 @@ RUN npm install -g learnyoumongo
 
 ADD idle.sh /keep/
 WORKDIR /keep
-CMD sh idle.sh
+RUN mkdir data
+# CMD sh idle.sh
+CMD mongod --port 27017 --dbpath=./data
