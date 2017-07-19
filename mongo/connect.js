@@ -14,5 +14,17 @@ var mongo = require('mongodb').MongoClient
 mongo.connect(url,
     function(err, db)
     {
+        db.listCollections().toArray(
+            function(err, collInfos)
+            {
+                console.log(collInfos)
+            })
         var parrots = db.collection('parrots')
+        parrots.find({}).toArray(
+            function(err, result)
+            {
+                if (err) throw err
+                console.log(result)
+                db.close()
+            })
     })
