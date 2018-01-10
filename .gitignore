@@ -1,5 +1,13 @@
 # npm
+
+# folders to skip
 node_modules/
 data/
+lib/
+
+# files to skip
+.config.json
+flows_*_cred.json
+.flows_*.json.backup
 package-lock.json
 *~

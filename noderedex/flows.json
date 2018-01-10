@@ -1,0 +1,56 @@
+[
+    {
+        "id": "6b8705f7.04d07c",
+        "type": "tab",
+        "label": "FirstFlow",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "dc535e8b.e9d2a",
+        "type": "inject",
+        "z": "6b8705f7.04d07c",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "x": 105.5,
+        "y": 167.14999389648438,
+        "wires": [
+            [
+                "68e44ff3.8390d"
+            ]
+        ]
+    },
+    {
+        "id": "d06a4f80.58ebd",
+        "type": "debug",
+        "z": "6b8705f7.04d07c",
+        "name": "",
+        "active": true,
+        "console": "false",
+        "complete": "false",
+        "x": 530,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "68e44ff3.8390d",
+        "type": "function",
+        "z": "6b8705f7.04d07c",
+        "name": "First Function",
+        "func": "// Create a Date object from the payload\nvar date = new Date(msg.payload)\n// Change the payload to be a formatted Date string\nmsg.payload = date.toString()\n// Return the message so it can be sent on\nreturn msg",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 320,
+        "y": 260,
+        "wires": [
+            [
+                "d06a4f80.58ebd"
+            ]
+        ]
+    }
+]
