@@ -8,4 +8,4 @@ services:
      - "5901:5901"
      - "1880:1880"
     volumes:
-     - .:/nodes
+     - .:/codes

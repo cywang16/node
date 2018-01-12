@@ -7,6 +7,20 @@
         "info": ""
     },
     {
+        "id": "57606f57.d7e0c",
+        "type": "tab",
+        "label": "Hello World",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "e12ba88c.ba2318",
+        "type": "tab",
+        "label": "CSS Tutorial",
+        "disabled": false,
+        "info": ""
+    },
+    {
         "id": "dc535e8b.e9d2a",
         "type": "inject",
         "z": "6b8705f7.04d07c",
@@ -50,6 +64,100 @@
         "wires": [
             [
                 "d06a4f80.58ebd"
+            ]
+        ]
+    },
+    {
+        "id": "38df80bc.bbaff",
+        "type": "http in",
+        "z": "57606f57.d7e0c",
+        "name": "",
+        "url": "/hello",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 134.5,
+        "y": 210.14999389648438,
+        "wires": [
+            [
+                "e30a5f82.646d"
+            ]
+        ]
+    },
+    {
+        "id": "e30a5f82.646d",
+        "type": "template",
+        "z": "57606f57.d7e0c",
+        "name": "page",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "<html>\n    <head>\n        <link rel=\"stylesheet\"\n        type=\"text/css\" href=\"first.css\">\n    </head>\n    <body>\n        <h1>Hello World!</h1>\n    </body>\n</html>",
+        "output": "str",
+        "x": 261.5,
+        "y": 313.4499816894531,
+        "wires": [
+            [
+                "a447d43a.26d208"
+            ]
+        ]
+    },
+    {
+        "id": "a447d43a.26d208",
+        "type": "http response",
+        "z": "57606f57.d7e0c",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 453.5,
+        "y": 394.29998779296875,
+        "wires": []
+    },
+    {
+        "id": "1fc67222.c8485e",
+        "type": "http in",
+        "z": "e12ba88c.ba2318",
+        "name": "",
+        "url": "/csstutorial/syntax",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 158.5,
+        "y": 174.14999389648438,
+        "wires": [
+            [
+                "ebeca6ce.cadd48"
+            ]
+        ]
+    },
+    {
+        "id": "9c72507e.25271",
+        "type": "http response",
+        "z": "e12ba88c.ba2318",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 504.5,
+        "y": 435.29998779296875,
+        "wires": []
+    },
+    {
+        "id": "ebeca6ce.cadd48",
+        "type": "template",
+        "z": "e12ba88c.ba2318",
+        "name": "page",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "<html>\n    <head>\n        <link rel=\"stylesheet\"\n        type=\"text/css\" href=\"/csstutorial_syntax.css\">\n    </head>\n    <body>\n        <h1>Hello World!</h1>\n        <h2>Smaller heading!</h2>\n        <p>This is a paragraph.</p>\n    </body>\n</html>",
+        "output": "str",
+        "x": 310.5,
+        "y": 264.4499816894531,
+        "wires": [
+            [
+                "9c72507e.25271"
             ]
         ]
     }
