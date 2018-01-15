@@ -160,5 +160,41 @@
                 "9c72507e.25271"
             ]
         ]
+    },
+    {
+        "id": "c96228b6.0407a8",
+        "type": "http in",
+        "z": "57606f57.d7e0c",
+        "name": "Root",
+        "url": "/",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 110,
+        "y": 460,
+        "wires": [
+            [
+                "caf2dcf3.ace41"
+            ]
+        ]
+    },
+    {
+        "id": "caf2dcf3.ace41",
+        "type": "template",
+        "z": "57606f57.d7e0c",
+        "name": "Load Index.html",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "<html>\n<head>\n<script src=\"https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js\"></script>\n\n</head>\n<body>\n\n<p>\n</p>\n<a href=\"/index.html\">link text</a>\n</body>\n</html>",
+        "output": "str",
+        "x": 268.5,
+        "y": 559,
+        "wires": [
+            [
+                "a447d43a.26d208"
+            ]
+        ]
     }
 ]
