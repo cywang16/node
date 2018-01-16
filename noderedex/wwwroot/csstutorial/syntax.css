@@ -1,4 +1,10 @@
-h1, h2, p {
+.center {
     text-align: center;
     color: red;
+}
+
+.right
+{
+    text-aligh: right;
+    color: green;
 }

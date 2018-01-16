@@ -151,7 +151,7 @@
         "fieldType": "msg",
         "format": "handlebars",
         "syntax": "mustache",
-        "template": "<html>\n    <head>\n        <link rel=\"stylesheet\"\n        type=\"text/css\" href=\"/csstutorial_syntax.css\">\n    </head>\n    <body>\n        <h1>Hello World!</h1>\n        <h2>Smaller heading!</h2>\n        <p>This is a paragraph.</p>\n    </body>\n</html>",
+        "template": "<html>\n    <head>\n        <link rel=\"stylesheet\"\n        type=\"text/css\" href=\"/csstutorial/syntax.css\">\n    </head>\n    <body>\n        <h1 class='center'>Hello World!</h1>\n        <h2 class='right'>Smaller heading!</h2>\n        <p class='center'>This is a paragraph.</p>\n    </body>\n</html>",
         "output": "str",
         "x": 310.5,
         "y": 264.4499816894531,
