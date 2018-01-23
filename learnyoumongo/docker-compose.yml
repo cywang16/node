@@ -2,6 +2,7 @@ version: '2'
 services:
   learnyoumongo:
     build: .
+    command: node idle.js
     ports:
      - "5000:5000"
      - "5901:5901"

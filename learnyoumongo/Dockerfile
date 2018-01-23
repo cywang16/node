@@ -17,6 +17,7 @@ RUN wget -qO- https://github.com/kanaka/noVNC/archive/master.tar.gz | tar xz --s
 RUN wget -qO- https://github.com/kanaka/websockify/archive/v0.7.0.tar.gz | tar xz --strip 1 -C /loop/noVNC/utils/websockify
 
 ADD idle.sh /loop/
+ADD idle.js /loop/
 WORKDIR /loop
 # CMD sh ./idle.sh
 RUN mkdir data

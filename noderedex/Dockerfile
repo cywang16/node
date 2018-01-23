@@ -8,5 +8,5 @@ ADD package.json .
 ADD settings.js .
 
 WORKDIR /codes
-# RUN npm install
+RUN npm install
 # CMD sh idle.sh
