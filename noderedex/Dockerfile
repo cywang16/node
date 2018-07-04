@@ -1,12 +1,12 @@
 
 FROM node
 
-WORKDIR /nodes
+WORKDIR /codes
 ADD flows.json .
 ADD idle.sh .
 ADD package.json .
 ADD settings.js .
 
-WORKDIR /codes
+# WORKDIR /codes
 RUN npm install
 # CMD sh idle.sh

@@ -2,7 +2,7 @@ version: '2'
 services:
   mynodered:
     build: .
-    command: sh /nodes/idle.sh
+    command: sh /codes/idle.sh
     # command: npm install
     ports:
      - "5000:5000"
@@ -10,3 +10,4 @@ services:
      - "1880:1880"
     volumes:
      - .:/codes
+     - /codes/node_modules
