@@ -18,6 +18,8 @@
 // to make it available:
 //var fs = require("fs");
 
+var fs=require('fs')
+
 module.exports = {
     // the tcp port that the Node-RED web server is listening on
     uiPort: process.env.PORT || 1880,
@@ -131,10 +133,10 @@ module.exports = {
     // See the comment at the top of this file on how to load the `fs` module used by
     // this setting.
     //
-    //https: {
-    //    key: fs.readFileSync('privatekey.pem'),
-    //    cert: fs.readFileSync('certificate.pem')
-    //},
+    https: {
+        key: fs.readFileSync('/codes/openssl/privatekey.pem'),
+        cert: fs.readFileSync('/codes/openssl/certificate.pem')
+    },
 
     // The following property can be used to cause insecure HTTP connections to
     // be redirected to HTTPS.
