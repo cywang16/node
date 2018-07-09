@@ -324,7 +324,7 @@
         "y": 640,
         "wires": [
             [
-                "74bde71e.2c0a28"
+                "160f4c91.568703"
             ]
         ]
     },
@@ -337,7 +337,7 @@
         "fieldType": "msg",
         "format": "handlebars",
         "syntax": "mustache",
-        "template": "<h1>Upload a file here:</h1>\n\n<form action=\"/upload\" method=\"POST\" enctype=\"multipart/form-data\">\n    <input type=\"file\" name=\"myFile\" />\n    <input type=\"submit\" value=\"Submit\">\n</form>",
+        "template": "<h1>Upload a file here:</h1>\n\n<form action=\"/simple/upload\" method=\"POST\" enctype=\"multipart/form-data\">\n    <input type=\"file\" name=\"myFile\" />\n    <input type=\"submit\" value=\"Submit\">\n</form>",
         "output": "str",
         "x": 490,
         "y": 640,
@@ -365,16 +365,6 @@
         "headers": {},
         "x": 570,
         "y": 1120,
-        "wires": []
-    },
-    {
-        "id": "a720ef54.1aa7d",
-        "type": "comment",
-        "z": "57606f57.d7e0c",
-        "name": "Simple",
-        "info": "",
-        "x": 130,
-        "y": 600,
         "wires": []
     },
     {
@@ -492,11 +482,11 @@
         "type": "http in",
         "z": "57606f57.d7e0c",
         "name": "",
-        "url": "/upload",
+        "url": "/simple/upload",
         "method": "post",
         "upload": true,
         "swaggerDoc": "",
-        "x": 150,
+        "x": 180,
         "y": 700,
         "wires": [
             [
@@ -531,8 +521,8 @@
         "func": "msg.name = msg.req.files[0].originalname;\nvar msg2 = {payload: msg.req.files[0].buffer, filename: msg.name}\n\nif (msg.req.files[0].mimetype.includes('image')) {\n    msg.payload = `<img src=\"data:image/gif;base64,${msg.req.files[0].buffer.toString('base64')}\">`;\n} else {\n    // msg.payload = msg.req.files[0].buffer.toString();\n    msg.payload = 'non image file'\n}\n\nreturn [msg, msg2];",
         "outputs": 2,
         "noerr": 0,
-        "x": 320,
-        "y": 720,
+        "x": 360,
+        "y": 740,
         "wires": [
             [
                 "959f0ab1.4cfe28"
@@ -578,5 +568,25 @@
         "x": 500,
         "y": 820,
         "wires": []
+    },
+    {
+        "id": "160f4c91.568703",
+        "type": "node-red-contrib-httpauth",
+        "z": "57606f57.d7e0c",
+        "name": "simple auth",
+        "file": "",
+        "cred": "",
+        "authType": "Basic",
+        "realm": "simple",
+        "username": "cywang",
+        "password": "nicole",
+        "hashed": false,
+        "x": 330,
+        "y": 640,
+        "wires": [
+            [
+                "74bde71e.2c0a28"
+            ]
+        ]
     }
 ]

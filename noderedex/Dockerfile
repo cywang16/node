@@ -1,5 +1,5 @@
 
-FROM node
+FROM node:9
 
 WORKDIR /codes
 ADD flows.json .

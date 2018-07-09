@@ -9,7 +9,8 @@
    },
    "dependencies": {
       "node-red-admin": "^0.1.3",
-      "node-red-contrib-hello-world": ""
+      "node-red-contrib-hello-world": "",
+      "node-red-contrib-httpauth": ""
    },
    "keywords": [
       "nodered"
