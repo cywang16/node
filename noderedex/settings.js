@@ -132,8 +132,8 @@ module.exports = {
     // this setting.
     //
     https: {
-        key: fs.readFileSync('/codes/openssl/privatekey.pem'),
-        cert: fs.readFileSync('/codes/openssl/certificate.pem')
+        key: fs.readFileSync('./openssl/privatekey.pem'),
+        cert: fs.readFileSync('./openssl/certificate.pem')
     },
 
     // The following property can be used to cause insecure HTTP connections to
