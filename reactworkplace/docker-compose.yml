@@ -1,0 +1,9 @@
+version: '3'
+services:
+  reactscratches:
+    build: .
+    command: sh /loop/idle.sh
+    ports:
+     - "8030:3000"
+    volumes:
+     - .:/code
