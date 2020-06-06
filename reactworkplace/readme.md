@@ -1,4 +1,10 @@
+<header>
+React Notes
+============
+</header>
+
 % React Notes
+Experimented md title: [Markdown tag for document title](https://stackoverflow.com/questions/17097894/markdown-tag-for-document-title)
 
 # Tutorial: Intro to React
 
