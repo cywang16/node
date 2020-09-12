@@ -1,8 +1,7 @@
 version: '3'
 services:
   reactscratches:
-    build: .
-    # command: sh /loop/idle.shbased on [Syntax for a single-line Bash infinite while loop](https://stackoverflow.com/questions/1289026/syntax-for-a-single-line-bash-infinite-while-loop)
+    image: node
     command: sh -c "while true; do echo 'Pause'; sleep 10; done"
     ports:
      - "8030:3000"
