@@ -1,17 +1,31 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+
+const myFirstElement = <h1>Hello React!</h1>
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  myFirstElement,
   document.getElementById('root')
 );
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+// ES 6
+class Header {
+  constructor() {
+    this.color = "Red";
+  }
+
+  changeColor = () => {
+    document.getElementById("demo").innerHTML += JSON.stringify(this);
+  }
+}
+
+var myheader = new Header();
+
+//The window object calls the function:
+window.addEventListener("load", myheader.changeColor);
+
+//A button object calls the function:
+document.getElementById("btn").addEventListener("click", myheader.changeColor);
+
+// React Render HTML
+ReactDOM.render(<p>Find control and render.</p>, document.getElementById('reactRenderHtml'))
