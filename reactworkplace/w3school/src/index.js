@@ -21,11 +21,27 @@ class Header {
 
 var myheader = new Header();
 
-//The window object calls the function:
+// The window object calls the function:
 window.addEventListener("load", myheader.changeColor);
 
-//A button object calls the function:
+// A button object calls the function:
 document.getElementById("btn").addEventListener("click", myheader.changeColor);
 
 // React Render HTML
 ReactDOM.render(<p>Find control and render.</p>, document.getElementById('reactRenderHtml'))
+
+const myElement = (
+  <table>
+    <tr>
+      <th>Name</th>
+    </tr>
+    <tr>
+      <td>John</td>
+    </tr>
+    <tr>
+      <td>Elsa</td>
+    </tr>
+  </table>
+)
+
+ReactDOM.render(myElement, document.getElementById('myElement'))
