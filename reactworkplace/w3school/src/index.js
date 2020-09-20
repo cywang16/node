@@ -1,5 +1,6 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from 'react'
+import ReactDOM from 'react-dom'
+import Car from './components/car'
 
 const myFirstElement = <h1>Hello React!</h1>
 
@@ -64,3 +65,5 @@ const groupedH1 = (
 
 ReactDOM.render(myListElement, document.getElementById('myListElement'))
 ReactDOM.render(groupedH1, document.getElementById('groupedH1'))
+
+ReactDOM.render(<Car />, document.getElementById('carPlace'))
