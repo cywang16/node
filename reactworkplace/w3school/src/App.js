@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 
 class App extends Component {
-  const myFirstElement = <h1>Hello World!</h1>
-  const helloReact = <h2>Hello React</h2>
 
   render() {
+    const myFirstElement = <h1>Hello World!</h1>
+    const helloReact = <h2>Hello React</h2>
     return (
       <div className="App">
       {myFirstElement}
