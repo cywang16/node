@@ -4,7 +4,7 @@ import App from './App'
 import Car from './components/car'
 
 ReactDOM.render(
-  App,
+  <App />,
   document.getElementById('root')
 )
 
