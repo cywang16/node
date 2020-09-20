@@ -6,7 +6,7 @@ class App extends Component {
     const myFirstElement = <h1>Hello World!</h1>
     const helloReact = <h2>Hello React</h2>
     return (
-      <div className="App">
+      <div>
       {myFirstElement}
         {helloReact}
       </div>
