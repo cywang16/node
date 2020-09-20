@@ -1,13 +1,12 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import App from 'App'
 import Car from './components/car'
 
-const myFirstElement = <h1>Hello React!</h1>
-
 ReactDOM.render(
-  myFirstElement,
+  App,
   document.getElementById('root')
-);
+)
 
 // ES 6
 class Header {
