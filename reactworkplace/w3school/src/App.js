@@ -5,8 +5,8 @@ function App() {
   const helloReact = <h2>Hello React</h2>
 
   return (
-    {myFirstElement}
     <div className="App">
+    {myFirstElement}
       {helloReact}
     </div>
   );
