@@ -1,11 +1,14 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 
-function App() {
-  return (
-    <div className="App">
-      <h1>Hello World!</h1>
-    </div>
-  );
+import HelloWorld from './components/helloWorld'
+
+class App extends Component {
+
+  render() {
+    return (
+      <HelloWorld />
+    )
+  }
 }
 
-export default App;
+export default App
