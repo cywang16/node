@@ -11,16 +11,4 @@ class App extends Component {
   }
 }
 
-/*
-function App() {
-
-  return (
-    <div className="App">
-    {myFirstElement}
-      {helloReact}
-    </div>
-  );
-}
-*/
-
 export default App
