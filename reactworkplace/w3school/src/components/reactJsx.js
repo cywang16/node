@@ -10,7 +10,7 @@ const myListElement = (
   </ul>
 )
 
-const groupedH1 = (
+const groupedH3 = (
   <div>
     <h3>I am a Header.</h3>
     <h3>I am a Header too.</h3>
@@ -24,7 +24,11 @@ function GetMyListElement() {
 }
 
 function GetGroupedH1() {
-    return {groupedH1}
+    return (
+        <div>
+            {groupedH3}
+        </div>
+    )
 }
 
 export default function ReactJsx() {
