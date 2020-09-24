@@ -1,5 +1,7 @@
 import React from 'react'
 
+var title = <h2>React JSX</h2>
+
 const myListElement = (
   <ul>
     <li>Apples</li>
@@ -28,6 +30,7 @@ function getGroupedH1() {
 export default function ReactJsx() {
     return (
         <div>
+        {title}
             <GetMyListElement />
             <getGroupedH1 />
         </div>

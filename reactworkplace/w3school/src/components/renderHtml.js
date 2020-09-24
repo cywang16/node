@@ -35,7 +35,6 @@ class RenderHtml extends React.Component {
         {title}
         <RenderSimple />
         <RenderMyElement />
-        {myElement}
       </div>
     )
   }
