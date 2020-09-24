@@ -16,13 +16,13 @@ const myElement = (
   </table>
 )
 
-export class RenderSimple extends React.Component {
+class RenderSimple extends React.Component {
   render() {
     return <p>Find control and render.</p>
   }
 }
 
-export class renderMyElement extends React.Component {
+class RenderMyElement extends React.Component {
   render() {
     return {myElement}
   }
@@ -34,7 +34,7 @@ class RenderHtml extends React.Component {
       <div>
         {title}
         <RenderSimple />
-        <renderMyElement />
+        <RenderMyElement />
         {myElement}
       </div>
     )

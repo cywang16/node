@@ -2,7 +2,8 @@ import React, { Component } from 'react'
 
 import HelloWorld from './components/helloWorld'
 import Es6 from './components/es6'
-import RenderHtml, {renderSimple, renderMyElement} from './components/renderHtml'
+// import RenderHtml, {renderSimple, renderMyElement} from './components/renderHtml'
+import RenderHtml from './components/renderHtml'
 
 class App extends Component {
 
