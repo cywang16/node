@@ -24,7 +24,7 @@ export class renderSimple extends React.Component {
 
 export class renderMyElement extends React.Component {
   render() {
-    return {myElement}
+    return <div>{myElement}</div>
   }
 }
 
