@@ -1,6 +1,7 @@
 import React from 'react'
 
 var title = <h2>React JSX</h2>
+var jsxQuestion = <p>Does JSX have to have '.jsx' file extension?</p>
 
 const myListElement = (
   <ul>
@@ -34,8 +35,8 @@ function GetGroupedH1() {
 export default function ReactJsx() {
     return (
         <div>
-        Does JSX have to have '.jsx' file extension?
-        {title}
+            {title}
+            {jsxQuestion}
             <GetMyListElement />
             <GetGroupedH1 />
         </div>
