@@ -4,6 +4,8 @@ import HelloWorld from './components/helloWorld'
 import Es6 from './components/es6'
 // import RenderHtml, {renderSimple, renderMyElement} from './components/renderHtml'
 import RenderHtml from './components/renderHtml'
+import ReactJsx from './components/reactJsx'
+import Car from './components/car'
 
 class App extends Component {
 
@@ -15,6 +17,8 @@ class App extends Component {
       <HelloWorld />
       <Es6 />
       <RenderHtml />
+      <ReactJsx />
+      <Car />
       </div>
     )
   }
