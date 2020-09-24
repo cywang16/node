@@ -16,7 +16,7 @@ const myElement = (
   </table>
 )
 
-export class renderSimple extends React.Component {
+export class RenderSimple extends React.Component {
   render() {
     return <p>Find control and render.</p>
   }
@@ -24,7 +24,7 @@ export class renderSimple extends React.Component {
 
 export class renderMyElement extends React.Component {
   render() {
-    return <div>{myElement}</div>
+    return {myElement}
   }
 }
 
@@ -33,7 +33,7 @@ class RenderHtml extends React.Component {
     return (
       <div>
         {title}
-        <renderSimple />
+        <RenderSimple />
         <renderMyElement />
         {myElement}
       </div>
