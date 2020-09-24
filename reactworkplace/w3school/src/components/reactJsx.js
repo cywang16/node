@@ -34,6 +34,7 @@ function GetGroupedH1() {
 export default function ReactJsx() {
     return (
         <div>
+        Does JSX have to have '.jsx' file extension?
         {title}
             <GetMyListElement />
             <GetGroupedH1 />
