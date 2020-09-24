@@ -13,7 +13,7 @@ class Header {
 
 var myEs6header = new Header()
 // The window object calls the function:
-window.addEventListener("load", myEs6header.changeColor)
+// window.addEventListener("load", myEs6header.changeColor)
 
 class Es6 extends React.Component {
 
