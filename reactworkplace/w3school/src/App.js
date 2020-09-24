@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 
 import HelloWorld from './components/helloWorld'
 import Es6 from './components/es6'
+import RenderHtml, {renderSimple, renderMyElement} from './components/renderHtml'
 
 class App extends Component {
 
@@ -12,6 +13,9 @@ class App extends Component {
       {myFirstElement}
       <HelloWorld />
       <Es6 />
+      <RenderHtml />
+      <renderSimple />
+      <renderMyElement />
       </div>
     )
   }
