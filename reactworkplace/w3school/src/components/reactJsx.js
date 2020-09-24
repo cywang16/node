@@ -12,8 +12,8 @@ const myListElement = (
 
 const groupedH1 = (
   <div>
-    <h1>I am a Header.</h1>
-    <h1>I am a Header too.</h1>
+    <h3>I am a Header.</h3>
+    <h3>I am a Header too.</h3>
   </div>
 )
 
@@ -23,7 +23,7 @@ function GetMyListElement() {
     )
 }
 
-function getGroupedH1() {
+function GetGroupedH1() {
     return {groupedH1}
 }
 
@@ -32,7 +32,7 @@ export default function ReactJsx() {
         <div>
         {title}
             <GetMyListElement />
-            <getGroupedH1 />
+            <GetGroupedH1 />
         </div>
     )
 }
