@@ -15,8 +15,6 @@ class App extends Component {
       <HelloWorld />
       <Es6 />
       <RenderHtml />
-      <renderSimple />
-      <renderMyElement />
       </div>
     )
   }
