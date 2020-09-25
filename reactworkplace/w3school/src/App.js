@@ -2,10 +2,9 @@ import React, { Component } from 'react'
 
 import HelloWorld from './components/helloWorld'
 import Es6 from './components/es6'
-// import RenderHtml, {renderSimple, renderMyElement} from './components/renderHtml'
 import RenderHtml from './components/renderHtml'
 import ReactJsx from './components/reactJsx'
-import Car from './components/car'
+import Car, {ColorPropCar, Garage} from './components/car'
 
 class App extends Component {
 
@@ -19,6 +18,8 @@ class App extends Component {
       <RenderHtml />
       <ReactJsx />
       <Car />
+      <ColorPropCar color = 'green colored prop' />
+      <Garage brand = 'Toyota' />
       </div>
     )
   }

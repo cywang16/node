@@ -19,26 +19,26 @@ const groupedH3 = (
 )
 
 function GetMyListElement() {
-    return (
-        <div>{myListElement}</div>
-    )
+  return (
+    <div>{myListElement}</div>
+  )
 }
 
 function GetGroupedH1() {
-    return (
-        <div>
-            {groupedH3}
-        </div>
-    )
+  return (
+    <div>
+      {groupedH3}
+    </div>
+  )
 }
 
 export default function ReactJsx() {
-    return (
-        <div>
-            {title}
-            {jsxQuestion}
-            <GetMyListElement />
-            <GetGroupedH1 />
-        </div>
-    )
+  return (
+    <div>
+      {title}
+      {jsxQuestion}
+      <GetMyListElement />
+      <GetGroupedH1 />
+    </div>
+  )
 }
