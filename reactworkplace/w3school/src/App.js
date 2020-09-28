@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-import HelloWorld from './components/helloWorld'
+import HelloWorld, {HelloWorldRow} from './components/helloWorld'
 import Es6 from './components/es6'
 import RenderHtml from './components/renderHtml'
 import ReactJsx from './components/reactJsx'
@@ -22,6 +22,15 @@ class App extends Component {
         <ColorPropCar color = 'green colored prop' />
         <Garage brand = 'Toyota' />
         <SassHello />
+        <table>
+          <tbody>
+            <tr>
+              <th>Exercise Name</th>
+              <th>Output</th>
+            </tr>
+            <HelloWorldRow />
+          </tbody>
+        </table>
       </div>
     )
   }
