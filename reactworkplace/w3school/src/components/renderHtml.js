@@ -4,6 +4,7 @@ var title = <h2>Component Render HTML</h2>
 
 const myElement = (
   <table>
+<tbody>
     <tr>
       <th>Name</th>
     </tr>
@@ -13,6 +14,7 @@ const myElement = (
     <tr>
       <td>Elsa</td>
     </tr>
+</tbody>
   </table>
 )
 
