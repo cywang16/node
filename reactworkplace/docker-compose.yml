@@ -2,7 +2,8 @@ version: '3'
 services:
   reactscratches:
     image: node
-    command: sh -c "while true; do echo 'Pause'; sleep 10; done"
+    # command: sh -c "while true; do echo 'Pause'; sleep 10; done"
+    command: node /code/node_simple.js /code/index.html
     ports:
      - "8030:3000"
      - "8080:80"
