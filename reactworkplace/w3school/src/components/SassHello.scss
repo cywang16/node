@@ -1,10 +1,11 @@
 $h2Color: blue;
 $h3Color: green;
 
-h2.SassHello {
-    color: $h2Color;
-}
-
-p.SassHello {
-    color: $h3Color;
+.SassHello {
+    h2 {
+        color: $h2Color;
+    }
+    p {
+        color: $h3Color;
+    }
 }
