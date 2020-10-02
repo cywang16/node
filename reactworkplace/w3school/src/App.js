@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
 
-import HelloWorld, {HelloWorldRow} from './components/helloWorld'
-import Es6, {Es6Row} from './components/es6'
+import TableHeader from './components/tableHeader'
+import HelloWorld from './components/helloWorld'
+import Es6 from './components/es6'
 import RenderHtml from './components/renderHtml'
 import ReactJsx from './components/reactJsx'
 import Car, {ColorPropCar, Garage} from './components/car'
@@ -21,12 +22,9 @@ class App extends Component {
         <SassHello />
         <table>
           <tbody>
-            <tr>
-              <th>Exercise Name</th>
-              <th>Output</th>
-            </tr>
-            <HelloWorldRow />
-            <Es6Row />
+            <TableHeader />
+            <HelloWorld />
+            <Es6 />
           </tbody>
         </table>
       </div>

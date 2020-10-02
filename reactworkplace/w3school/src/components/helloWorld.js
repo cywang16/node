@@ -2,22 +2,12 @@ import React from 'react'
 
 class HelloWorld extends React.Component {
   render() {
-    const helloReact = <h2>Hello React</h2>
-    return (
-      <div>
-        {helloReact}
-      </div>
-    )
-  }
-}
-
-export class HelloWorldRow extends React.Component {
-  render() {
-    const helloReact = <h2>Hello React</h2>
+    var helloReact = <h2>Hello React</h2>
+    var helloReactOutput = <h2>Hello React Output</h2>
     return (
       <tr>
-        <td>{helloReact}</td>
-        <td>{helloReact}</td>
+        <td class = 'BorderedCell'>{helloReact}</td>
+        <td>{helloReactOutput}</td>
       </tr>
     )
   }
