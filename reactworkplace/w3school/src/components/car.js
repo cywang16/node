@@ -6,7 +6,7 @@ class Car extends React.Component {
     this.state = {color: 'red'}
   }
   render() {
-    return <h2>Hi, I am a {this.state.color} Car!</h2>
+    return <td class = 'BorderedCell'>Hi, I am a {this.state.color} Car!</td>
   }
 }
 
@@ -25,10 +25,13 @@ export class ColorPropCar extends React.Component {
 export class Garage extends React.Component {
   render() {
     return (
-      <div>
-        <h3>Who lives in garage?</h3>
-        <BrandPropCar brand = {this.props.brand} />
-      </div>
+      <tr>
+        <Car />
+        <td>
+          <h3>Who lives in garage?</h3>
+          <BrandPropCar brand = {this.props.brand} />
+        </td>
+      </tr>
     )
   }
 }

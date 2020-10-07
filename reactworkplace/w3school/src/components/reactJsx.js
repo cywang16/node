@@ -34,11 +34,13 @@ function GetGroupedH1() {
 
 export default function ReactJsx() {
   return (
-    <div>
-      {title}
-      {jsxQuestion}
-      <GetMyListElement />
-      <GetGroupedH1 />
-    </div>
+    <tr>
+      <td>{title}</td>
+      <td class = 'BorderedCell'>
+        {jsxQuestion}
+        <GetMyListElement />
+        <GetGroupedH1 />
+      </td>
+    </tr>
   )
 }

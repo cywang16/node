@@ -6,9 +6,9 @@ var paragraph = <p>Add a little style!</p>
 
 export default function SassHello() {
   return (
-    <div class = 'SassHello'>
-      {title}
-      {paragraph}
-    </div>
+    <tr class = 'SassHello'>
+      <td class = 'UnderlinedCell'>{title}</td>
+      <td class = 'UnderlinedCell'>{paragraph}</td>
+    </tr>
   )
 }

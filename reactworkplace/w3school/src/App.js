@@ -14,17 +14,19 @@ class App extends Component {
     return (
       <div>
         {myFirstElement}
-        <RenderHtml />
-        <ReactJsx />
-        <Car />
-        <ColorPropCar color = 'green colored prop' />
-        <Garage brand = 'Toyota' />
-        <SassHello />
         <table>
           <tbody>
             <TableHeader />
             <HelloWorld />
             <Es6 />
+            <RenderHtml />
+            <ReactJsx />
+            <Garage brand = 'Toyota' />
+            <tr>
+              <td><ColorPropCar color = 'green colored prop' /></td>
+              <Car />
+            </tr>
+            <SassHello />
           </tbody>
         </table>
       </div>

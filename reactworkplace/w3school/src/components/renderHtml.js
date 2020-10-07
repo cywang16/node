@@ -33,11 +33,13 @@ class RenderMyElement extends React.Component {
 class RenderHtml extends React.Component {
   render() {
     return (
-      <div>
-        {title}
-        <RenderSimple />
-        <RenderMyElement />
-      </div>
+      <tr>
+        <td class = 'ColoredCell'>{title}</td>
+        <td>
+          <RenderSimple />
+          <RenderMyElement />
+        </td>
+      </tr>
     )
   }
 }
