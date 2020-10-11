@@ -1,5 +1,6 @@
 import React from 'react'
 
+/*
 var canvas = document.getElementById('canvas');
 var ctx = canvas.getContext('2d');
 var radius = canvas.height / 2;
@@ -12,13 +13,14 @@ function drawClock() {
   ctx.fillStyle = 'white';
   ctx.fill();
 }
+*/
 
 class SimpleClock extends React.Component {
   render() {
     return (
       <canvas id = 'canvas'
       width = '400' height = '400'
-      style = {{backgroundColor: #333}} />
+      style = {{backgroundColor: '#333'}} />
     )
   }
 }
