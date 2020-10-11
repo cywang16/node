@@ -7,6 +7,7 @@ class Header {
   }
 
   changeColor = () => {
+    this.date = new Date()
     document.getElementById('es6Demo').innerHTML = this.date.toJSON()
   }
 }
