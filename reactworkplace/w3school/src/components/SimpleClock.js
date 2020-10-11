@@ -3,19 +3,30 @@ Follow [Canvas with React.js](https://medium.com/@pdx.lucasm/canvas-with-react-j
 */
 import React, { useRef, useEffect } from 'react'
 
-/*
-var canvas = document.getElementById('canvas');
-var ctx = canvas.getContext('2d');
-var radius = canvas.height / 2;
-ctx.translate(radius, radius);
-radius = radius * 0.90
-drawClock();
-*/
-
 const drawClock = (ctx, radius) => {
-  ctx.arc(0, 0, radius, 0 , 2 * Math.PI)
-  ctx.fillStyle = 'white'
-  ctx.fill()
+  drawFace(ctx, radius)
+}
+
+const drawFace = (ctx, radius) => {
+  var grad;
+
+  ctx.beginPath();
+  ctx.arc(0, 0, radius, 0, 2 * Math.PI);
+  ctx.fillStyle = 'white';
+  ctx.fill();
+
+  grad = ctx.createRadialGradient(0, 0 ,radius * 0.95, 0, 0, radius * 1.05);
+  grad.addColorStop(0, '#333');
+  grad.addColorStop(0.5, 'white');
+  grad.addColorStop(1, '#333');
+  ctx.strokeStyle = grad;
+  ctx.lineWidth = radius*0.1;
+  ctx.stroke();
+
+  ctx.beginPath();
+  ctx.arc(0, 0, radius * 0.1, 0, 2 * Math.PI);
+  ctx.fillStyle = '#333';
+  ctx.fill();
 }
 
 const SimpleClock = props => {
@@ -42,7 +53,7 @@ const SimpleClock = props => {
     //Our draw came here
     const render = () => {
       frameCount++
-      draw(context, frameCount)
+      // draw(context, frameCount)
       animationFrameId = window.requestAnimationFrame(render)
     }
     render()
@@ -50,7 +61,8 @@ const SimpleClock = props => {
     return () => {
       window.cancelAnimationFrame(animationFrameId)
     }
-  }, [draw])
+  }
+//   }, [draw])
 
   return (
     <canvas ref = {canvasRef} {...props} />
