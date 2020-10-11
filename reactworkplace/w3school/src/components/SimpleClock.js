@@ -61,7 +61,7 @@ const SimpleClock = props => {
     return () => {
       window.cancelAnimationFrame(animationFrameId)
     }
-  }
+  })
 //   }, [draw])
 
   return (
