@@ -5,7 +5,9 @@ import App from './App'
 import './index.css'
 
 ReactDOM.render(
-  <SimpleClock />,
+  <SimpleClock 
+  width = '400' height = '400'
+  style = {{backgroundColor: '#333'}} />,
   document.getElementById('SimpleClock')
 )
 
