@@ -18,7 +18,7 @@ class SimpleClock extends React.Component {
     return (
       <canvas id = 'canvas'
       width = '400' height = '400'
-      style = {{background-color: #333}} />
+      style = {{backgroundColor: #333}} />
     )
   }
 }
