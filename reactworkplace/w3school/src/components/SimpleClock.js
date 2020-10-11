@@ -10,13 +10,13 @@ var radius = canvas.height / 2;
 ctx.translate(radius, radius);
 radius = radius * 0.90
 drawClock();
-
-function drawClock() {
-  ctx.arc(0, 0, radius, 0 , 2 * Math.PI);
-  ctx.fillStyle = 'white';
-  ctx.fill();
-}
 */
+
+const drawClock = (ctx, radius) => {
+  ctx.arc(0, 0, radius, 0 , 2 * Math.PI)
+  ctx.fillStyle = 'white'
+  ctx.fill()
+}
 
 const SimpleClock = props => {
   const canvasRef = useRef(null)
@@ -30,9 +30,12 @@ const SimpleClock = props => {
   }
   
   useEffect(() => {
-    
     const canvas = canvasRef.current
     const context = canvas.getContext('2d')
+    var radius = canvas.height / 2;
+    context.translate(radius, radius);
+    radius = radius * 0.90
+    drawClock(context, radius)
     let frameCount = 0
     let animationFrameId
     
