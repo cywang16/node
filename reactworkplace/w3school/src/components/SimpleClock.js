@@ -8,7 +8,7 @@ const SimpleClock = props => {
   var ctx
   var radius
 
-  const drawClock = (ctx, radius) => {
+  const drawClock = () => {
     drawFace(ctx, radius)
     drawNumbers(ctx, radius)
     drawTime(ctx, radius)
