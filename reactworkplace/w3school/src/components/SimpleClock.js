@@ -1,5 +1,7 @@
 /*
-Follow [Canvas with React.js](https://medium.com/@pdx.lucasm/canvas-with-react-js-32e133c05258)
+Follow
+[Canvas with React.js](https://medium.com/@pdx.lucasm/canvas-with-react-js-32e133c05258)
+[Canvas Clock](https://www.w3schools.com/graphics/canvas_clock.asp) in W3Schools
 */
 import React, { useRef, useEffect } from 'react'
 
