@@ -1,13 +1,12 @@
 version: '3'
 services:
-  reactscratches:
+  gatsbyscratches:
     image: node
     # command: sh -c "while true; do echo 'Pause'; sleep 10; done"
     command: node /idle/wait.js /idle/index.html
     ports:
-     - "7030:8080"
-     - "8030:3000"
-     - "8180:8000"
+     - "7080:8080"
+     - "8080:8000"
     volumes:
      - .:/code
      - ../utilities:/idle
