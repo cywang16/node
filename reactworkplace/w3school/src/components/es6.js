@@ -6,9 +6,10 @@ class Header {
     this.date = new Date()
   }
 
-  changeColor = () => {
-    this.date = new Date()
-    document.getElementById('es6Demo').innerHTML = this.date.toJSON()
+  checkTime = () => {
+    // this.date = new Date()
+    // document.getElementById('es6Demo').innerHTML = this.date.toJSON()
+    document.getElementById('es6Demo').innerHTML = 'checkTime gets ' + Date()
   }
 }
 
@@ -26,8 +27,8 @@ class Es6 extends React.Component {
         </td>
         <td class = 'BorderedCell'>
           <p>The <strong>this</strong> keyword represents the Header object.</p>
-          <button id = 'es6Btn' onClick = {myEs6header.changeColor}>Click Me!</button>
-          <p><strong>this</strong> represents:</p><div id = 'es6Demo'></div>
+          <button id = 'es6Btn' onClick = {myEs6header.checkTime}>Click Me!</button>
+          <p><strong>this</strong> was created at {myEs6header.date}</p><div id = 'es6Demo'></div>
         </td>
       </tr>
     )
