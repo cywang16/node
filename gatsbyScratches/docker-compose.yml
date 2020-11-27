@@ -1,3 +1,14 @@
+# Readme
+# . how to start Gatsby hello project
+#   . cd helloGatsby
+#   . yarn global add gatsby-cli
+#   . yarn install
+#   . gatsby develop -H 0.0.0.0
+#   . [Running GatsbyJS app in Docker container](https://dev.to/paveli/running-gatsbyjs-app-in-docker-container-4ed2)
+# . optional: install pandoc
+#   . apt-get update
+#   . apt-get install pandoc
+
 version: '3'
 services:
   gatsbyscratches:
