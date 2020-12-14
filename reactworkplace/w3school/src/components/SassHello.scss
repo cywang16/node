@@ -1,0 +1,11 @@
+$h2Color: blue;
+$h3Color: green;
+
+.SassHello {
+    h2 {
+        color: $h2Color;
+    }
+    p {
+        color: $h3Color;
+    }
+}

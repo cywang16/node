@@ -1,0 +1,23 @@
+
+.TableHeader {
+  th {
+    width: max-content;
+  }
+  .Output {
+    color: white;
+    background-color: blue;
+  }
+}
+
+.BorderedCell {
+  border: 1px solid gray;
+}
+
+.ColoredCell {
+  background-color: violet;
+}
+
+.UnderlinedCell {
+  border: 1px solid gray;
+  border-style: hidden hidden solid hidden;
+}

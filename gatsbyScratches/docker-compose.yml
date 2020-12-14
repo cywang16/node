@@ -1,0 +1,23 @@
+# Readme
+# . how to start Gatsby hello project
+#   . cd helloGatsby
+#   . yarn global add gatsby-cli
+#   . yarn install
+#   . gatsby develop -H 0.0.0.0
+#   . [Running GatsbyJS app in Docker container](https://dev.to/paveli/running-gatsbyjs-app-in-docker-container-4ed2)
+# . optional: install pandoc
+#   . apt-get update
+#   . apt-get install pandoc
+
+version: '3'
+services:
+  gatsbyscratches:
+    image: node
+    # command: sh -c "while true; do echo 'Pause'; sleep 10; done"
+    command: node /idle/wait.js /idle/index.html
+    ports:
+     - "7080:8080"
+     - "8080:8000"
+    volumes:
+     - .:/code
+     - ../utilities:/idle

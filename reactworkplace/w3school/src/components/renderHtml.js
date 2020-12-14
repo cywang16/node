@@ -4,15 +4,17 @@ var title = <h2>Component Render HTML</h2>
 
 const myElement = (
   <table>
-    <tr>
-      <th>Name</th>
-    </tr>
-    <tr>
-      <td>John</td>
-    </tr>
-    <tr>
-      <td>Elsa</td>
-    </tr>
+    <tbody>
+      <tr>
+        <th>Name</th>
+      </tr>
+      <tr>
+        <td>John</td>
+      </tr>
+      <tr>
+        <td>Elsa</td>
+      </tr>
+    </tbody>
   </table>
 )
 
@@ -31,11 +33,13 @@ class RenderMyElement extends React.Component {
 class RenderHtml extends React.Component {
   render() {
     return (
-      <div>
-        {title}
-        <RenderSimple />
-        <RenderMyElement />
-      </div>
+      <tr>
+        <td class = 'ColoredCell'>{title}</td>
+        <td>
+          <RenderSimple />
+          <RenderMyElement />
+        </td>
+      </tr>
     )
   }
 }
